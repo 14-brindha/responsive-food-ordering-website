@@ -1,17 +1,26 @@
-
 html {
   scroll-behavior: smooth;
 }
         
     /* Mobile view - vertical */
- @media (max-width: 768px) {
-      
-      nav{
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-      }
-       
+    @media (max-width: 768px) {
+       nav {
+          position: sticky;
+          flex-direction: column;
+          align-items: center;
+        }
+
+  .nav-right {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-right input {
+    width: 100%;
+    margin: 10px;
+
+  }
+
         #home {
           display: flex;
           width: 100%;
@@ -54,31 +63,36 @@ html {
        
          #contact-section{
                 width: 100%;
-                min-height: 100vh;
+                min-height: 90vh;
                 max-width: 400px;
          }
-  
-    
-        nav input{
-                width: 100%;
-                height: 40px;
-                font-size: 16px;   
-                box-sizing: border-box;
-                min-width: 40%;
-                padding: 10px;
-                margin: auto;
-        }
+           nav a {
+             display: block;
+           }
     }
 
     /* Desktop view - horizontal */
  @media (min-width: 768px) {
-      nav{
-        margin-top: 20px;
-        width: 60%;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-      }
+   nav {
+      position: sticky;
+     display: flex;
+     justify-content: space-between; /* push left group left, right group right */
+     align-items: center;
+     width: 60%;
+     margin:auto;
+  }
+
+.nav-left a {
+  margin: 0 10px;
+}
+
+.nav-right input {
+  width: 200px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 2px 2px 6px rgba(51, 51, 51, 0.3);
+}
       #home {
         display: flex;
         width: 80%;
@@ -100,10 +114,6 @@ html {
             width: 40%;
             margin: auto;
         }
-     #home input{
-        width: 40%;
-        text-align: right;
-      }
         #about_txt{
            text-align: left;
            width: 600px;
@@ -115,16 +125,15 @@ html {
            box-shadow: 2px 2px 6px rgba(51,51,51,1);
         }
        #contact-section{
-           min-height: 100vh; /*take full screen height */
+          min-height: 92vh; 
+              margin: auto;
+            display: flex;
+            justify-content: center;
+          align-items: center;
        }
       .product{
         width: 80%;
       }
-       nav input{
-          width: 30%;
-          height: 30px;
-       }
-     
       #about{
          display: flex;
          flex-wrap: wrap;
@@ -168,7 +177,6 @@ html {
  
     #home{
         display: flex;
-        align-items: center;
         justify-content: center;
         align-items: center;
     }
@@ -177,6 +185,7 @@ html {
         align-items: center;
         justify-content: center;
         text-align: left;
+        margin: auto;
     }
      
     .offer-text{
@@ -207,7 +216,6 @@ html {
         text-align: right;
         padding: 20px;
         border: none;
-        margin: auto;
         box-shadow:  2px 2px 6px rgba(51, 51, 51, 1);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
@@ -258,7 +266,8 @@ html {
       justify-content: center;
       min-height: 100vh;
        gap: 20px;  
-
+       width: 80%;
+       margin: auto;
     }
     .product{
              height: auto;
@@ -284,7 +293,7 @@ html {
        line-height: 25px;
       padding: 15px;
     }
-   .product h1,h2 {
+   .product h1,.product h2 {
   font-size: 18px;
   padding: 15px;
 }
