@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Responsive Website</title>
     <link rel="stylesheet" href="style.css">
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Delicious food menu with burgers, sandwiches, fries, and more. Order online and enjoy fresh, tasty meals.">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
 </head>
 <body>
  
     <div class="menu">
-       <header>
+         <header>
+   
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#menubar">Menu</a>
-           <a href="#contact">Contact</a>
-          <input type="text" placeholder="Search">
+         <div class="nav-left">
+           <a href="#home">Home</a>
+           <a href="#about">About</a>
+           <a href="#menubar">Menu</a>
+            <a href="#contact">Contact</a>
+          </div>
+         <div class="nav-right">
+           <input type="text" placeholder="Search">
+          </div>
         </nav>
         </header>
         <main>
@@ -38,7 +44,7 @@
           <article id="about_img"><img src="abt.jpg" alt="delicious burger"></article>
           <article id="about_txt">
             <h1 class="h1_txt">About Us</h1>
-            <p class="para">Welcome to Burger House! Since opening, we’ve been serving up juicy burgers made 
+            <p class="para">Welcome to Food House! Since opening, we’ve been serving up juicy burgers made 
         with fresh ingredients and bold flavors. Our restaurant is the perfect place to 
         enjoy a delicious meal, meet friends, or just relax with a tasty bite. 
         From classic cheeseburgers to gourmet creations, our menu has something for everyone. 
@@ -115,7 +121,7 @@
 
   <input type="text" placeholder="Your Name" required>
   <input type="tel" placeholder="Phone Number" required>
-  <textarea placeholder="Delivery Address" required></textarea>
+  <textarea  placeholder="Delivery Address" required></textarea>
 <div class="select">
   <select required>
     <option value="">Select Food Item</option>
@@ -134,5 +140,4 @@
   <p>© 2025 Burger House. All Rights Reserved</p>
 </footer>
 </body>
-
 </html>
